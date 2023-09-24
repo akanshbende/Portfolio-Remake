@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .sidebar{
+  width
+} */
+
+.nav-link a {
+  gap: 1;
+}
