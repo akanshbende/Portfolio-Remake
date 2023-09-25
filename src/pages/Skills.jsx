@@ -5,6 +5,8 @@ function Skills() {
   return (
     <>
       <PageTitle title="Skills" />
+      <Heading title={"Skills"} />
+      <h1>SKILLSSSS</h1>
     </>
   );
 }

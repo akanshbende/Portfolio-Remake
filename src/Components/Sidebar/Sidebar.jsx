@@ -37,7 +37,7 @@ function Sidebar() {
             return (
               <div key={index} className="flex">
                 <Link
-                  to={item.url}
+                  to={item?.url}
                   className="nav-link w-full flex justify-between items-center p-1 alignItems: 'center',"
                 >
                   {/* <div className="flex justify-between items-center"> */}

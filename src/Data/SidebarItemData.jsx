@@ -9,8 +9,8 @@ const SidebarItems = [
     title: "Home",
     url: "/",
     icon: <HomeIcon />,
-    cName: "nav-text",
     active: true,
+    cName: "nav-text",
   },
   {
     title: "Projects",
@@ -18,10 +18,9 @@ const SidebarItems = [
     icon: <DataObjectIcon />,
     cName: "nav-text",
   },
-
   {
     title: "Skills",
-    url: "/skills",
+    url: "/skill",
     icon: <IntegrationInstructionsIcon />,
     cName: "nav-text",
   },

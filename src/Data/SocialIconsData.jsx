@@ -2,6 +2,8 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { SiLeetcode } from "react-icons/si";
+import { FaInstagram } from "react-icons/fa";
+// import { BsGithub } from "react-icons/bs";
 
 const SocialIcons = [
   {
@@ -26,9 +28,9 @@ const SocialIcons = [
     active: true,
   },
   {
-    title: "LeetCode",
+    title: "Instagram",
     url: "",
-    icon: <SiLeetcode />,
+    icon: <FaInstagram />,
     cName: "social-text",
     active: true,
   },

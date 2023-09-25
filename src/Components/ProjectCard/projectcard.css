@@ -1,0 +1,12 @@
+.project-img {
+  transition: transform 0.5s;
+  border-radius: 12px 12px 0 0;
+}
+.project-img:hover {
+  transform: scale(1.2);
+  border-radius: 12px 12px 12px 12px;
+}
+
+.deploy .repo {
+  color: white !important;
+}
