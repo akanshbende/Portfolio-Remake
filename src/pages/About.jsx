@@ -2,8 +2,6 @@ import React from "react";
 import PageTitle from "../Components/PageTitle";
 import Heading from "../Components/Heading/Heading";
 import { Container } from "@mui/material";
-import GitHubContributition from "../Components/GithubCalender/GitHubContributition";
-import GitHubCalendar from "../Components/GithubCalender/GitCal";
 
 function About() {
   return (

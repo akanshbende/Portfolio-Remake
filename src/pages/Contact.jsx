@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import PageTitle from "../Components/PageTitle";
 import Heading from "../Components/Heading/Heading";
 import { Container, Stack } from "@mui/material";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import Button1 from "../Components/Buttons/Button1";
-import emailjs from "emailjs-com";
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -21,31 +18,6 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form data to be sent:", formData);
-
-    // Send the form data via email using EmailJS
-    emailjs
-      .sendForm(
-        "service_y48j0xd",
-        "template_djkcn9l",
-        formData,
-        "akanshbende@gmail.com"
-      )
-      .then((response) => {
-        console.log("Email sent successfully!", response);
-        // Reset the form
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-      });
-  };
   return (
     <>
       <PageTitle title="Contact" />

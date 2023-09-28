@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { saveAs } from "file-saver";
-import Typography from "@mui/material/Typography";
+
 import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { BiSolidDownload } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import resumePDF from "./Akansh-Bende_Resume.pdf"; // Replace with your resume PDF file path
-import Button2 from "../Buttons/Button2";
+
 import resumeImage from "../../../public/ResumeAkansh.png"; // Replace with your resume image file path
 import Button1 from "../Buttons/Button1";
 import "./ResumeModel.css";
