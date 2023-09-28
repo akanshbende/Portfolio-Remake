@@ -10,15 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.30",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/lab": "^5.0.0-alpha.145",
     "@mui/material": "^5.13.6",
     "@tailwindcss/custom-forms": "^0.2.1",
+    "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
+    "postcss": "^8.4.30",
     "postcss-cli": "^10.1.0",
     "postcss-nested": "^6.0.1",
     "react": "^18.2.0",
