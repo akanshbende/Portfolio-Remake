@@ -2,10 +2,11 @@ import { Container, Stack } from "@mui/material";
 import React from "react";
 
 import SocialIcons from "../../Data/SocialIconsData.jsx";
+import { Link } from "react-router-dom";
 function SocialLinks() {
   return (
     <>
-      <div className=" social-links fixed m-5 bottom-10 flex  text-white text-lg">
+      <div className=" social-links fixed m-5 bottom-10 flex text-lg">
         <Stack
           direction={"column"}
           spacing={2}
@@ -28,9 +29,11 @@ function SocialLinks() {
             SocialIcons.map((item, index) => {
               return (
                 <div key={index}>
-                  <div className="flex align-middle justify-between gap-1">
+                  <div className="flex align-middle justify-between gap-1 cursor-pointer">
                     <span className="flex self-center text-3xl">
-                      {item?.icon}
+                      <a target="_blank" href={item?.url}>
+                        {item?.icon}
+                      </a>
                     </span>
                   </div>
                 </div>

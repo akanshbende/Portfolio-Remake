@@ -1,0 +1,29 @@
+.instagram {
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  color: white;
+  /* font-size: 3rem; */
+}
+
+.instagram:hover {
+  color: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  ) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+.message:hover {
+  color: #6388f9;
+}
+.github:hover {
+  color: grey;
+}
+.linkedin:hover {
+  color: #0b79e7;
+}

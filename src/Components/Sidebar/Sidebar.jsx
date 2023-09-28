@@ -1,9 +1,27 @@
 import { Container, Stack, Box } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import items from "../../Data/SidebarItemData";
 import { Link } from "react-router-dom";
-
+import "./sidebar.css";
 function Sidebar() {
+  var marker = document.querySelector(".marker");
+  var item = document.querySelector("a");
+  function indicator(e) {
+    marker.style.left = e.offsetLeft + "px";
+    marker.style.width = e.offsetWidth + "px";
+  }
+
+  // item.forEach((Link) => {
+  //   Link.addEventListener("click", (e) => {
+  //     indicator(e.target);
+  //   });
+  // });
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleItemClick = (index) => {
+    setActiveIndex(index);
+  };
   return (
     <>
       <Container
@@ -12,6 +30,7 @@ function Sidebar() {
           alignItems: "center",
           justifyContent: "center",
           backdropFilter: "blur(5px)",
+          zIndex: 100,
         }}
       >
         <Stack
@@ -40,9 +59,13 @@ function Sidebar() {
           {/* <div sx={{}}> */}
           {items.map((item, index) => {
             return (
-              <div key={index} className="flex">
+              <div key={index} className="flex relative">
+                {activeIndex === index && (
+                  <div className="marker absolute"></div>
+                )}
                 <Link
                   to={item?.url}
+                  onClick={() => handleItemClick(index)}
                   className="nav-link w-full flex justify-between items-center p-1 alignItems: 'center',"
                 >
                   {/* <div className="flex justify-between items-center"> */}

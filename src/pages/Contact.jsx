@@ -59,7 +59,6 @@ function Contact() {
             >
               <form
                 action="https://getform.io/f/cb3ff207-76e1-4c0b-a150-ff72104a18b4"
-                onSubmit={handleSubmit}
                 method="POST"
                 style={{
                   gap: "1rem",
@@ -75,8 +74,6 @@ function Contact() {
                   placeholder="Enter Your Name"
                   type="text"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
                 />
                 <input
@@ -86,9 +83,6 @@ function Contact() {
                   margin="normal"
                   placeholder="Enter Your Email"
                   type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                 />
                 <input
@@ -99,8 +93,6 @@ function Contact() {
                   placeholder="Enter Your Message"
                   style={{ height: "150px", textAlign: "initial" }}
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                 />
                 <button

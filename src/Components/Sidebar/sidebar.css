@@ -6,11 +6,21 @@
   width
 } */
 
-.nav-link a {
+.nav-link {
   gap: 1;
+  transition: 0.5s;
 }
+.marker {
+  width: 100%;
+  transition: 0.5s ease !important;
 
-.sidebar {
-  position: fixed !important;
-  /* top: 20px; */
+  position: absolute;
+  z-index: 2 !important;
+  height: 4px;
+  width: 100%;
+  background: #3efcff;
+  bottom: -10px;
+  transition: e.5s;
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px #3efcff;
 }
