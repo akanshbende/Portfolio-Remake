@@ -7,7 +7,7 @@ import { Box, Container } from "@mui/material";
 import { Paper } from "@mui/material";
 import { Link } from "react-router-dom";
 import CustomizedTimeline from "../Components/Timeline/TimeLine";
-import { motion } from "framer-motion";
+
 import { CiLocationArrow1 } from "react-icons/ci";
 // import ChatBubble from "../Components/ChatBubble/ChatBubbleComp";
 // import ChatBubbleComp from "../Components/ChatBubble/ChatBubbleComp";
