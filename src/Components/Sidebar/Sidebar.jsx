@@ -17,7 +17,7 @@ function Sidebar() {
   //   });
   // });
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleItemClick = (index) => {
     setActiveIndex(index);
