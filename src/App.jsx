@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
-import Skills from "./pages/Projects";
+import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 function App() {
   const [count, setCount] = useState(0);

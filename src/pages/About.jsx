@@ -2,6 +2,9 @@ import React from "react";
 import PageTitle from "../Components/PageTitle";
 import Heading from "../Components/Heading/Heading";
 import { Container } from "@mui/material";
+import GitHubContributition from "../Components/GithubCalender/GitHubContributition";
+import GitHubCalendar from "../Components/GithubCalender/GitCal";
+
 function About() {
   return (
     <>
@@ -19,21 +22,29 @@ function About() {
           boxShadow: "0px 5px 10px #3a3f64",
         }}
       >
-        <div className="about-wrapper">
-          <h4>Hello!</h4>
-          <br /> I am Akansh Bende from India.
-          <br /> An Aspiring Full-Stack Developer looking for Opportunities
+        <div className="about-wrapper text-white ">
+          <h4 className="about-hello">Hello!</h4>
           <br />
-          Apart from Coding I have a wide range of interests:
-          <ul>
-            <li>Astronomy</li>
-            <li>Graphic Designing</li>
-            <li>Playing Games</li>
-          </ul>
+          <div className="about-intro text-3xl ">
+            I am <span className="about-name"> Akansh Bende </span> from
+            <span className="about-country"> India. </span>
+            <br /> An Aspiring Full-Stack Developer looking for Opportunities
+            <br />
+            Apart from Coding I have a wide range of interests:
+            <div className="about-hobby m-2">
+              <ul className="about-hobby-list list-disc font-extrabold">
+                <li>Astronomy</li>
+                <li>Graphic Designing</li>
+                <li>Playing Games</li>
+              </ul>
+            </div>
+            <h4>I am always looking forward to New Technologies.</h4>
+          </div>
         </div>
       </Container>
-      <Heading title={"Days I Code"} />
-      <Container
+
+      {/* <Heading title={"Github Contributions"} /> */}
+      {/* <Container
         sx={{
           border: "2px solid rgba(24, 24, 24, 0.5)",
           height: "cal(100vh-200px)",
@@ -44,7 +55,9 @@ function About() {
           backdropFilter: "blur(0px)",
           boxShadow: "0px 5px 10px #3a3f64",
         }}
-      ></Container>
+      >
+        <GitHubCalendar />
+      </Container> */}
     </>
   );
 }

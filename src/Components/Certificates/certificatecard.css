@@ -1,0 +1,34 @@
+.certificate-card {
+  align-items: center;
+  transition: 0.5s;
+}
+.certificate-card:hover {
+  transform: translate(10px, -10px);
+  /* box-sizing: 0px 15px 20px #3a3f64 !important; */
+}
+.certificate-data {
+  /* height: 150px; */
+  align-items: center;
+  justify-content: space-evenly !important;
+  gap: auto;
+}
+.org-logo {
+  margin: 1rem;
+}
+.org-logo img {
+  border-radius: 5px !important;
+}
+
+.compititionName {
+  font-size: 1.5rem !important;
+}
+.organizationName {
+  color: rgb(21, 241, 168);
+  letter-spacing: 1px;
+}
+.issueDate {
+  color: rgb(255, 0, 0);
+  font-size: 0.8rem;
+  /* font-weight: 700; */
+  opacity: 0.7;
+}

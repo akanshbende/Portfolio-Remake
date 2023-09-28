@@ -3,30 +3,14 @@ import PageTitle from "../Components/PageTitle";
 import { Container } from "@mui/material";
 import ProjectsData from "../Data/ProjectsData";
 import ProjectCard from "../Components/ProjectCard/ProjectCard";
+import Heading from "../Components/Heading/Heading";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 function Projects() {
   return (
     <>
       <PageTitle title="Projects" />
-      <Container
-        sx={{
-          border: "2px solid rgba(24, 24, 24, 0.5)",
-          height: "cal(100vh-200px)",
-          borderRadius: "10px",
-          marginTop: "1rem",
-          padding: "1rem",
-          backgroundColor: "rgba(24, 24, 24, 0.5)",
-          backdropFilter: "blur(0px)",
-          boxShadow: "0px 5px 10px #3a3f64",
-        }}
-      >
-        {/* <div className="text-white">Timeline</div> */}
-        <h1
-          className="text-white
-          text-5xl "
-        >
-          #Projets
-        </h1>
-      </Container>
+      <Heading title={"Projects"} />
       <Container sx={{}}>
         {/* <div className="text-white">Timeline</div> */}
 
@@ -48,12 +32,14 @@ function Projects() {
                     boxShadow: "0px 5px 10px #3a3f64",
                   }}
                 >
-                  <ProjectCard
-                    img={project?.img}
-                    title={project?.title}
-                    deploy={project?.deploy}
-                    repo={project?.repo}
-                  />
+                  {(
+                    <ProjectCard
+                      img={project?.img}
+                      title={project?.title}
+                      deploy={project?.deploy}
+                      repo={project?.repo}
+                    />
+                  ) || <Skeleton />}
                 </div>
               );
             })}

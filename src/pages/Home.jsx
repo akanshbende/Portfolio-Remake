@@ -7,6 +7,8 @@ import { Box, Container } from "@mui/material";
 import { Paper } from "@mui/material";
 import { Link } from "react-router-dom";
 import CustomizedTimeline from "../Components/Timeline/TimeLine";
+import { motion } from "framer-motion";
+import { CiLocationArrow1 } from "react-icons/ci";
 // import ChatBubble from "../Components/ChatBubble/ChatBubbleComp";
 // import ChatBubbleComp from "../Components/ChatBubble/ChatBubbleComp";
 
@@ -52,9 +54,13 @@ function Home() {
           backgroundColor: "rgba(24, 24, 24, 0.5)",
           backdropFilter: "blur(0px)",
           boxShadow: "0px 5px 10px #3a3f64",
+          position: "relative",
         }}
+        className="home-container"
       >
-        <div className="flex justify-between px-2">
+        {/* <div className="anim-box1 absolute "></div>
+        <div className="anim-box2 absolute "></div> */}
+        <div className="flex justify-between px-2 z-50">
           <div
             className="p-2 m-2 w-1/2"
             style={
@@ -64,7 +70,7 @@ function Home() {
             }
           >
             {/* <h1 className="text-white">home page content</h1> */}
-            <div className="text-white text-6xl w-full">
+            <div className="text-white text-6xl w-full text-bold">
               <h1>I'm</h1>
               <span
                 className=""
@@ -74,17 +80,23 @@ function Home() {
                 ref={el}
               />
             </div>
-            <div className="text-white text-2xl mt-4 font-thin w-full">
-              <p className="break-normal tracking-wideer">
-                HOLA! , If you are looking for a web designer and developer,
-                here is a portfolio !!
+            <div className="text-white text-3xl mt-4 font-thin w-full">
+              <p
+                className="break-normal  text-900"
+                style={{ letterSpacing: "2px" }}
+              >
+                <span className="home-hello text-4xl text-bold text-lime-400">
+                  HOLA!
+                </span>
+                , If you are looking for a web designer and developer, here is a
+                portfolio!!
               </p>
             </div>
             <div className="buttons mt-7">
-              <span
+              <div
                 className="px-3"
                 style={{
-                  width: "fit-content",
+                  width: "max-content",
                   fontSize: "1.2rem",
 
                   padding: "8px 20px",
@@ -98,8 +110,11 @@ function Home() {
                   backgroundColor: "rgba(0,0,0,0.3)",
                 }}
               >
-                <Link to="/">Projects</Link>
-              </span>
+                <Link to="/projects" className="flex ">
+                  Projects
+                  <CiLocationArrow1 className="home-arrow self-center mx-1 text-bold text-xl ease-in-out duration-300  hover:rotate-12" />
+                </Link>
+              </div>
             </div>
           </div>
           <div
@@ -120,6 +135,15 @@ function Home() {
         </div>
         {/* <div className="text-white">Timeline</div> */}
       </Container>
+
+      {/* <motion.div
+        animate={{
+          x: 100,
+          y: -50,
+          scale: 1,
+          rotate: 0,
+        }}
+      /> */}
       <Container
         sx={{
           border: "2px solid rgba(24, 24, 24, 0.5)",
@@ -129,13 +153,13 @@ function Home() {
           marginBottom: "2rem",
           padding: "1rem",
           backgroundColor: "rgba(24, 24, 24, 0.5)",
-          backdropFilter: "blur(0px)",
+          backdropFilter: "blur(5px)",
           boxShadow: "0px 5px 10px #3a3f64",
         }}
       >
         <h1
           className="text-white text-5xl "
-          style={{ textShadow: "1px 5px #000000" }}
+          // style={{ textShadow: "1px 5px #000000" }}
         >
           #Timeline
         </h1>

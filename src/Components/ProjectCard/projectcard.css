@@ -3,8 +3,9 @@
   border-radius: 12px 12px 0 0;
 }
 .project-img:hover {
-  transform: scale(1.2);
-  border-radius: 12px 12px 12px 12px;
+  transform: translateY(-15px);
+  /* transform: scale(1.05); */
+  /* border-radius: 12px 12px 12px 12px; */
 }
 
 .deploy .repo {

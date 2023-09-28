@@ -5,7 +5,7 @@ import SocialIcons from "../../Data/SocialIconsData.jsx";
 function SocialLinks() {
   return (
     <>
-      <div className=" social-links absolute m-5 bottom-10 flex  text-white text-lg">
+      <div className=" social-links fixed m-5 bottom-10 flex  text-white text-lg">
         <Stack
           direction={"column"}
           spacing={2}

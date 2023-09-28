@@ -9,3 +9,8 @@
 .nav-link a {
   gap: 1;
 }
+
+.sidebar {
+  position: fixed !important;
+  /* top: 20px; */
+}

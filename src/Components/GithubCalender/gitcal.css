@@ -1,0 +1,34 @@
+/* GitHub calendar container */
+.github-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+  grid-gap: 2px; /* Gap between calendar cells */
+  max-width: 400px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the calendar on the page */
+}
+
+/* Calendar cell style */
+.github-calendar-cell {
+  width: 20px; /* Adjust the width of each cell */
+  height: 20px; /* Adjust the height of each cell */
+  background-color: #e1e4e8; /* Default background color */
+  border: 1px solid #fff; /* White border for each cell */
+}
+
+/* Calendar cell hover effect */
+.github-calendar-cell:hover {
+  background-color: #0366d6; /* Change background color on hover */
+  cursor: pointer;
+}
+
+/* Set specific styles for contribution cells (e.g., different color for contributions) */
+/* You can customize this further based on your design preferences */
+.github-calendar-cell.contribution {
+  background-color: #28a745; /* Green color for contributions */
+  border: 1px solid #fff; /* White border for contributions */
+}
+
+/* Set specific styles for today's cell (e.g., different border color) */
+.github-calendar-cell.today {
+  border: 1px solid #0366d6; /* Blue border for today's cell */
+}

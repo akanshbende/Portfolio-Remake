@@ -1,0 +1,19 @@
+/* .skillcard-wrapper {
+  line-height: 3rem;
+} */
+.skillcard-wrapper {
+  transition: 0.5s;
+  margin: 0.8rem;
+}
+.skillcard-wrapper:hover {
+  transform: translate(10px, -10px);
+  box-shadow: 0px 10px 20px #a2a7ca;
+  cursor: pointer;
+}
+.skillcard-data {
+  margin-top: 20px;
+  font-size: xx-large;
+}
+.card-icon img {
+  width: 180px !important;
+}

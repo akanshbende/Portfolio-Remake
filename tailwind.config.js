@@ -1,8 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "venice-blue": "#30547E",
+        //orange: colors.orange,
+        primary: colors.blue,
+        secondary: colors.emerald,
+        tertiary: colors.gray,
+        danger: colors.red,
+        "code-400": "#fefcf9",
+        "code-600": "#3c455b",
+      },
+    },
   },
   plugins: [],
 };

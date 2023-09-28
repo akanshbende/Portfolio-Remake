@@ -21,8 +21,8 @@ const ProjectsData = [
   },
   {
     title: "Portfolio",
-    deploy: "/",
-    img: "/",
+    deploy: "https://portfolio-remake-6mmv27w0o-akanshbende.vercel.app/",
+    img: "https://user-images.githubusercontent.com/76099756/271194796-8251a418-dca8-4378-9dc4-783eff94965a.png",
     repo: "https://github.com/akanshbende/FinTrack",
     cName: "social-text",
   },

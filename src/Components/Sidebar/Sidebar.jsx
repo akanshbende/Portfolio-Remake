@@ -7,7 +7,12 @@ function Sidebar() {
   return (
     <>
       <Container
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backdropFilter: "blur(5px)",
+        }}
       >
         <Stack
           direction={"row"}
@@ -24,10 +29,10 @@ function Sidebar() {
             color: "white",
             alignSelf: "center",
             boxShadow: "0px 8px 15px #3a3f64",
-            backdropFilter: "blur 5px",
+
             backgroundColor: "rgba(0,0,0,0.5)",
           }}
-
+          className="sidebar"
           // sx={{
           //   width: "100%",
           // }}

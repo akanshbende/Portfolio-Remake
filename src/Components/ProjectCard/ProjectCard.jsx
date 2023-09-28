@@ -7,7 +7,13 @@ import { FaRocket } from "react-icons/fa";
 function ProjectCard({ img, title, deploy, repo }) {
   return (
     <>
-      <div className="wrapper " style={{ width: "300px", height: "15rem" }}>
+      <div
+        className="wrapper "
+        style={{
+          width: "300px",
+          height: "15rem",
+        }}
+      >
         <div className="content flex-col">
           <div className="project-image rounded-xl">
             <img
@@ -21,12 +27,16 @@ function ProjectCard({ img, title, deploy, repo }) {
             <h3>{title}</h3>
           </div>
           <div className="project-links m-2 text-white flex ">
-            <Link className="deploy text-white text-2xl m-2" href={deploy}>
+            <a
+              target="_blank"
+              className="deploy text-white text-2xl m-2"
+              href={deploy}
+            >
               <FaRocket />
-            </Link>
-            <Link className="repo text-2xl m-2" href={repo}>
+            </a>
+            <a target="_blank" className="repo text-2xl m-2" href={repo}>
               <BsGithub />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
