@@ -1,3 +1,4 @@
 # Portfolio-Remake
+My Portfolio Website
 
-![portfolio](https://github.com/akanshbende/Portfolio-Remake/assets/76099756/fc1107d6-b219-4f43-a8df-f0fbf99c9c43)
+![Screenshot 2023-09-28 115315](https://github.com/akanshbende/Portfolio-Remake/assets/76099756/8251a418-dca8-4378-9dc4-783eff94965a)
