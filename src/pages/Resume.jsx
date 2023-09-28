@@ -1,7 +1,7 @@
 import React from "react";
 import PageTitle from "../Components/PageTitle";
 import Heading from "../Components/Heading/Heading";
-import { PDFViewer } from "@react-pdf/renderer";
+
 import ResumePdf from "../Components/ResumePdf/ResumePdf.jsx";
 import { Button, Container } from "@mui/material";
 import Button2 from "../Components/Buttons/Button2";
