@@ -60,7 +60,7 @@ function Home() {
       >
         {/* <div className="anim-box1 absolute "></div>
         <div className="anim-box2 absolute "></div> */}
-        <div className="flex justify-between px-2 z-50">
+        <div className="flex justify-between px-2 z-50 sm:flex">
           <div
             className="p-2 m-2 w-1/2"
             style={
