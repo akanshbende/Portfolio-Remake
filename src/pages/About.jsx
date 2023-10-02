@@ -2,6 +2,8 @@ import React from "react";
 import PageTitle from "../Components/PageTitle";
 import Heading from "../Components/Heading/Heading";
 import { Container } from "@mui/material";
+import GithubRepo from "../Components/GithubContributes/GithubRepo";
+import LeetcodeCode from "../Components/LeetcodeSolutions/LeetcodeCode";
 
 function About() {
   return (
@@ -41,8 +43,8 @@ function About() {
         </div>
       </Container>
 
-      {/* <Heading title={"Github Contributions"} /> */}
-      {/* <Container
+      <Heading title={"Github Contributions"} />
+      <Container
         sx={{
           border: "2px solid rgba(24, 24, 24, 0.5)",
           height: "cal(100vh-200px)",
@@ -50,11 +52,26 @@ function About() {
           marginTop: "1rem",
           padding: "1rem",
           backgroundColor: "rgba(24, 24, 24, 0.5)",
-          backdropFilter: "blur(0px)",
+          backdropFilter: "blur(10px)",
           boxShadow: "0px 5px 10px #3a3f64",
         }}
       >
-        <GitHubCalendar />
+        <GithubRepo />
+      </Container>
+      {/* <Heading title={"Days I Code"} />
+      <Container
+        sx={{
+          border: "2px solid rgba(24, 24, 24, 0.5)",
+          height: "cal(100vh-200px)",
+          borderRadius: "10px",
+          marginTop: "1rem",
+          padding: "1rem",
+          backgroundColor: "rgba(24, 24, 24, 0.5)",
+          backdropFilter: "blur(10px)",
+          boxShadow: "0px 5px 10px #3a3f64",
+        }}
+      >
+        <LeetcodeCode />
       </Container> */}
     </>
   );
