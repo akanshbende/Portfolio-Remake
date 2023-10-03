@@ -14,12 +14,14 @@ function Heading({ title }) {
           backgroundColor: "rgba(24, 24, 24, 0.5)",
           backdropFilter: "blur(0px)",
           boxShadow: "0px 5px 10px #3a3f64",
+          fontWeight: 800,
+          letterSpacing: "2px",
         }}
       >
         {/* <div className="text-white">Timeline</div> */}
         <h1
           className="text-white
-          text-5xl "
+          text-5xl text-bolder"
         >
           #{title}
         </h1>

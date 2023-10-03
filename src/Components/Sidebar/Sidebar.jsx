@@ -34,7 +34,7 @@ function Sidebar() {
         }}
       >
         <Stack
-          direction={"row"}
+          direction={{ xs: "column", sm: "row" }}
           spacing={2}
           sx={{
             zIndex: 50,

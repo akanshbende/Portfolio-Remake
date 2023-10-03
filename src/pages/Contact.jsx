@@ -116,6 +116,7 @@ function Contact() {
                     // backdropFilter: "blur 5px",
                     backgroundColor: "rgba(0,0,0,0.3)",
                   }}
+                  className="contact-submit-button"
                   type="submit"
                   title={"Submit"}
                 >

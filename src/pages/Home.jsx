@@ -69,6 +69,7 @@ function Home() {
           backdropFilter: "blur(0px)",
           boxShadow: "0px 5px 10px #3a3f64",
           position: "relative",
+          fontWeight: 600,
         }}
         className="home-container"
       >
@@ -97,7 +98,7 @@ function Home() {
             <div className="text-white text-3xl mt-4 font-thin w-full">
               <p
                 className="break-normal  text-900"
-                style={{ letterSpacing: "2px" }}
+                style={{ letterSpacing: "2px", fontWeight: 700 }}
               >
                 <span className="home-hello text-4xl text-bold text-lime-400">
                   HOLA!
@@ -124,9 +125,13 @@ function Home() {
                   backgroundColor: "rgba(0,0,0,0.3)",
                 }}
               >
-                <Link to="/projects" className="flex ">
+                <Link
+                  to="/projects"
+                  className="flex"
+                  style={{ letterSpacing: "2px", fontWeight: 700 }}
+                >
                   Projects
-                  <CiLocationArrow1 className="home-arrow self-center mx-1 text-bold text-xl ease-in-out duration-300  hover:rotate-12" />
+                  <CiLocationArrow1 className="home-arrow self-center mx-1 text-bold text-xl ease-in-out duration-300  hover:rotate-45" />
                 </Link>
               </div>
             </div>

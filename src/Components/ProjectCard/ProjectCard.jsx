@@ -33,10 +33,10 @@ function ProjectCard({ img, title, deploy, repo }) {
               className="deploy text-white text-2xl m-2"
               href={deploy}
             >
-              <FaRocket />
+              <FaRocket className="ease-in-out duration-300  hover:rotate-12 hover:text-teal-200" />
             </a>
             <a target="_blank" className="repo text-2xl m-2" href={repo}>
-              <BsGithub />
+              <BsGithub className="ease-in-out duration-300  hover:rotate-12 hover:text-gray-400" />
             </a>
           </div>
         </div>
