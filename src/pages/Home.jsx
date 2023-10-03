@@ -41,6 +41,20 @@ function Home() {
     };
   }, []);
 
+  // {
+  //   const blurDivs = document.querySelector("blur-load");
+  // }
+
+  // const img = blurDivs.querySelector("img");
+  // function loaded() {
+  //   // div. classList.add("Ioaded")
+  // }
+  // if (img.complete) {
+  //   loaded();
+  // } else {
+  //   img.addEventListener("load", loaded);
+  // }
+
   return (
     <>
       <PageTitle title="Home" />
@@ -118,7 +132,7 @@ function Home() {
             </div>
           </div>
           <div
-            className="m-2 p-2"
+            className="blur-load m-2 p-2"
             style={
               {
                 // border: "1px solid #ffffff",
