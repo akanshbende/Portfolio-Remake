@@ -130,6 +130,7 @@ function Home() {
               width={350}
               alt=""
               style={{ borderRadius: "5px" }}
+              loading="lazy"
             />
           </div>
         </div>

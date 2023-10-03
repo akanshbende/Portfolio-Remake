@@ -21,6 +21,7 @@ function ProjectCard({ img, title, deploy, repo }) {
               alt=""
               className="project-img "
               style={{ objectFit: "cover" }}
+              loading="lazy"
             />
           </div>
           <div className="project-title text-white m-2">

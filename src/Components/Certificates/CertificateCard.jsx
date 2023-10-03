@@ -30,7 +30,12 @@ function CertificateCard({
         }}
       >
         <div className="org-logo ">
-          <img src={organizationLogo} className="organizationLogo" alt="" />
+          <img
+            src={organizationLogo}
+            className="organizationLogo"
+            alt=""
+            loading="lazy"
+          />
         </div>
 
         <div className="certificate-data ml-2.5">

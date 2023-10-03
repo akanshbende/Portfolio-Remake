@@ -23,6 +23,7 @@ function SkillCard({ icon, name, type, Proficiency }) {
             src={icon}
             alt=""
             className="skill-card-img bg-cover bg-center object-cover"
+            loading="lazy"
           />
         </div>
         <div className="skillcard-data text-white flex align-middle first-letter justify-center text-center text-bold ">
