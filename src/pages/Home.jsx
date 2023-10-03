@@ -126,7 +126,7 @@ function Home() {
             }
           >
             <img
-              src="/akansh.jpg"
+              src="/akansh.webp"
               width={350}
               alt=""
               style={{ borderRadius: "5px" }}
