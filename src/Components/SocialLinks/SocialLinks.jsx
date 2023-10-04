@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 function SocialLinks() {
   return (
     <>
-      <div className=" social-links fixed m-5 bottom-10 flex text-lg">
+      <div className=" social-links flex sm:fixed align-middle justify-center m-5 bottom-10  text-lg">
         <Stack
-          direction={"column"}
+          direction={{ xs: "row", sm: "column" }}
           spacing={2}
           sx={{
             zIndex: 50,
@@ -29,7 +29,7 @@ function SocialLinks() {
             SocialIcons.map((item, index) => {
               return (
                 <div key={index}>
-                  <div className="flex align-middle justify-between gap-1 cursor-pointer">
+                  <div className="flex align-middle justify-between gap-1 cursor-pointer     ease-in duration-300">
                     <span className="flex self-center text-3xl">
                       <a target="_blank" href={item?.url}>
                         {item?.icon}

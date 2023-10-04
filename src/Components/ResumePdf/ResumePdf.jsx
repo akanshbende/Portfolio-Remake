@@ -60,20 +60,25 @@ function Resume() {
   };
 
   return (
-    <div className="w-2/3 m-1 p-2">
+    <div className="w-full flex-col sm:w-2/3 m-1 p-2">
       <div
-        className="flex align-middle justify-center "
+        className=" sm:flex align-middle justify-center "
         onClick={handleOpen}
         style={{ cursor: "pointer" }}
       >
-        <img src={resumeImage} alt="Resume" className="object-contain w-1/2" />
+        <img
+          src={resumeImage}
+          alt="Resume"
+          className="object-contain w-full sm:w-1/2"
+        />
       </div>
-      <div className="resume-download flex "></div>
+      <div className="resume-download "></div>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="hidden sm:block"
       >
         <Box sx={style}>
           <div className="flex align-middle justify-between text-white m-2 w-full px-2">

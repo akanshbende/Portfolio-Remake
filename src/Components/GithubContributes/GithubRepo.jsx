@@ -21,11 +21,14 @@ const minimalTheme = {
 function GithubRepo() {
   return (
     <>
-      <div className="text-white">
+      <div className="text-white ">
         <GitHubCalendar
           blockSize={22}
           blockMargin={8}
           blockRadius={6}
+          style={{
+            width: "100%",
+          }}
           // transformData={(e) => {
           //   return isMobile ? e.slice(196) : e;
           // }}

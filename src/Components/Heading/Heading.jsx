@@ -16,12 +16,14 @@ function Heading({ title }) {
           boxShadow: "0px 5px 10px #3a3f64",
           fontWeight: 800,
           letterSpacing: "2px",
+          width: "90%",
         }}
+        className="mx-3"
       >
         {/* <div className="text-white">Timeline</div> */}
         <h1
-          className="text-white
-          text-5xl text-bolder"
+          className="text-white text-4xl
+          sm:text-5xl text-bolder"
         >
           #{title}
         </h1>

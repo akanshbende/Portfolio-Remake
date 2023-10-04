@@ -23,8 +23,8 @@ export default function CustomizedTimeline() {
   return (
     <Timeline
       position="alternate"
-      className="text-white"
-      sx={{ fontFamily: "Poppins" }}
+      className="text-white  text-xs sm:text-base"
+      sx={{ fontFamily: "Poppins", marginTop: 5 }}
     >
       <TimelineItem>
         <TimelineOppositeContent
@@ -47,9 +47,11 @@ export default function CustomizedTimeline() {
           <Typography
             variant="h6"
             component="span"
-            className="timeline-title roboto"
+            className="timeline-title text-xs sm:text-2xl roboto"
           >
-            <strong className="timeline-title">@Day Zero</strong>
+            <strong className="timeline-title text-xs sm:text-2xl">
+              @Day Zero
+            </strong>
           </Typography>
           {/* <Typography>Because you need strength</Typography> */}
         </TimelineContent>
@@ -71,7 +73,7 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
-            <strong className="timeline-title">
+            <strong className="timeline-title text-xs sm:text-2xl ">
               New Orange City Convent
               <br />
               Amravati, IN
@@ -103,7 +105,7 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
-            <strong className="timeline-title">
+            <strong className="timeline-title text-xs sm:text-2xl">
               Prerna Jr College <br /> <h6>Nagpur, IN</h6>
             </strong>
           </Typography>
@@ -127,9 +129,9 @@ export default function CustomizedTimeline() {
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <TimelineContent sx={{ py: "12px", px: 2, width: "100%" }}>
           <Typography variant="h6" component="span">
-            <strong className="timeline-title">
+            <strong className="timeline-title text-xs sm:text-2xl ">
               Government College of Engineering <br /> <h6>Aurangabad, IN</h6>
             </strong>
           </Typography>
@@ -158,7 +160,9 @@ export default function CustomizedTimeline() {
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
-            <strong className="timeline-title">Next Big Thing</strong>
+            <strong className="timeline-title text-xs sm:text-2xl">
+              Next Big Thing
+            </strong>
           </Typography>
           {/* <Typography>B.Tech : Computer Science Engineering</Typography> */}
         </TimelineContent>

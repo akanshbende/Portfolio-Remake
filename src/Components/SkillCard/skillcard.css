@@ -3,7 +3,7 @@
 } */
 .skillcard-wrapper {
   transition: 0.5s;
-  margin: 0.8rem;
+  /* margin: 0.8rem; */
 }
 .skillcard-wrapper:hover {
   transform: translate(10px, -10px);
@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 .skillcard-data {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: xx-large;
 }
 .card-icon img {

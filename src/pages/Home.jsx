@@ -70,6 +70,7 @@ function Home() {
           boxShadow: "0px 5px 10px #3a3f64",
           position: "relative",
           fontWeight: 600,
+          width: "93%",
         }}
         className="home-container"
       >
@@ -85,7 +86,7 @@ function Home() {
             }
           >
             {/* <h1 className="text-white">home page content</h1> */}
-            <div className="text-white text-6xl w-full text-bold">
+            <div className="text-white text-5xl sm:text-6xl w-full text-bold">
               <h1>I'm</h1>
               <span
                 className=""
@@ -95,7 +96,7 @@ function Home() {
                 ref={el}
               />
             </div>
-            <div className="text-white text-3xl mt-4 font-thin sm:w-full">
+            <div className="text-white text-2xl sm:text-3xl mt-4 font-thin sm:w-full">
               <p
                 className="break-normal  text-900"
                 style={{ letterSpacing: "2px", fontWeight: 700 }}
@@ -171,11 +172,13 @@ function Home() {
           borderRadius: "10px",
           marginTop: "2rem",
           marginBottom: "2rem",
-          padding: "1rem",
+          // padding: "1rem",
           backgroundColor: "rgba(24, 24, 24, 0.5)",
           backdropFilter: "blur(5px)",
           boxShadow: "0px 5px 10px #3a3f64",
+          width: "95%",
         }}
+        className="text-xs"
       >
         <h1
           className="text-white text-5xl "
@@ -183,6 +186,7 @@ function Home() {
         >
           #Timeline
         </h1>
+
         <CustomizedTimeline />
       </Container>
     </>

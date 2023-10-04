@@ -14,7 +14,10 @@ function Projects() {
       <Container sx={{}}>
         {/* <div className="text-white">Timeline</div> */}
 
-        <div className="projects flex flex-wrap" style={{ flexWrap: "wrap" }}>
+        <div
+          className="projects flex flex-wrap align-middle justify-center sm:justify-start"
+          style={{ flexWrap: "wrap" }}
+        >
           {ProjectsData &&
             ProjectsData.map((project, index) => {
               return (

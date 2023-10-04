@@ -23,10 +23,15 @@ function Contact() {
       <PageTitle title="Contact" />
       <Heading title={"Contact"} />
       <Container
-        sx={{ alignItems: "center", display: "flex", justifyContent: "center" }}
+        sx={{
+          alignItems: "center",
+          display: "flex",
+          justifyContent: "center",
+          width: "90%",
+        }}
       >
         <div
-          className="contact-wrapper  h-full"
+          className="contact-wrapper flex-col sm:flex-row  sm:h-full"
           style={{
             marginTop: "1rem",
             display: "flex",
@@ -42,14 +47,15 @@ function Contact() {
             boxShadow: "0px 5px 10px #3a3f64",
           }}
         >
-          <div className="contact-img w-1/2 h-full">
+          <div className="contact-img h-1/2 rounded-t-lg sm:w-1/2 sm:h-full  sm:rounded-l-xl  sm:my-0">
             <img
               src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
               alt=""
               loading="lazy"
+              className="rounded-t-lg sm:rounded-l-xl"
             />
           </div>
-          <div className="contact-form w-1/2 flex align-middle justify-center  text-white">
+          <div className="contact-form my-4 sm:my-4 w-1/2 flex align-middle justify-center  text-white">
             <Stack
               component="form"
               sx={{

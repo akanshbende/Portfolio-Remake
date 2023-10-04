@@ -11,9 +11,9 @@ function Layout() {
     <>
       <div className="flex align-middle justify-center flex-col relative">
         <Sidebar />
-        <SocialLinks />
         <Outlet />
         <ScrollToTop />
+        <SocialLinks />
         <Footer />
       </div>
     </>

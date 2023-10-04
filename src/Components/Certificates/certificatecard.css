@@ -1,6 +1,7 @@
 .certificate-card {
   align-items: center;
   transition: 0.5s;
+  /* width: 48%; */
 }
 .certificate-card:hover {
   transform: translate(10px, -10px);

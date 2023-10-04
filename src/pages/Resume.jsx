@@ -35,10 +35,12 @@ function Resume() {
           backgroundColor: "rgba(24, 24, 24, 0.5)",
           backdropFilter: "blur(0px)",
           boxShadow: "0px 5px 10px #3a3f64",
+          width: "90%",
         }}
+        className="flex-col sm:flex-row"
       >
         <ResumePdf />
-        <div className="resume-cv w-1/2 flex flex-col align-middle justify-center">
+        <div className="resume-cv sm:w-1/2 flex flex-col align-middle justify-center">
           <Button2
             title={"Download Resume"}
             icon={<BiSolidDownload />}
@@ -50,9 +52,9 @@ function Resume() {
 
       <Heading title={"Certificates"} />
 
-      <Container sx={{ marginTop: "2rem" }}>
+      <Container sx={{ marginTop: "2rem", width: "90%" }}>
         <div
-          className="certificates flex flex-wrap w-full"
+          className="certificates flex flex-wrap w-full sm:justify-evenly"
           style={{ gap: "1.5rem", width: "100%" }}
         >
           {CertificateData &&

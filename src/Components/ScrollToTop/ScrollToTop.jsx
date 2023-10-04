@@ -9,7 +9,7 @@ function ScrollToTop() {
         style={{
           width: "50px",
           height: "50px",
-          zIndex: 50,
+          zIndex: 1000,
           width: "fit-content",
           padding: "15px",
           border: "2px solid",

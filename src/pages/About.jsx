@@ -20,10 +20,11 @@ function About() {
           backgroundColor: "rgba(24, 24, 24, 0.5)",
           backdropFilter: "blur(0px)",
           boxShadow: "0px 5px 10px #3a3f64",
+          width: "90%",
         }}
       >
         <div className="about-wrapper text-white ">
-          <h4 className="about-hello">Hello!</h4>
+          <h4 className="about-hello ">Hello!</h4>
           <br />
           <div className="about-intro text-3xl ">
             I am <span className="about-name"> Akansh Bende </span> from
@@ -54,6 +55,7 @@ function About() {
           backgroundColor: "rgba(24, 24, 24, 0.5)",
           backdropFilter: "blur(10px)",
           boxShadow: "0px 5px 10px #3a3f64",
+          width: "90%",
         }}
       >
         <GithubRepo />

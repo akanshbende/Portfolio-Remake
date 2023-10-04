@@ -14,10 +14,10 @@ function CertificateCard({
   return (
     <>
       <div
-        className="certificate-card text-white flex  "
+        className="certificate-card text-white flex   sm:w-5/12 flex-col sm:flex-row"
         style={{
           display: "flex",
-          width: "48%",
+          // width: "48%",
           zIndex: 30,
           border: "2px solid ",
           height: "cal(100vh-200px)",
