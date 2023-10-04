@@ -75,9 +75,9 @@ function Home() {
       >
         {/* <div className="anim-box1 absolute "></div>
         <div className="anim-box2 absolute "></div> */}
-        <div className="flex justify-between px-2 z-50 sm:flex">
+        <div className="block justify-between px-2 z-50  sm:flex">
           <div
-            className="p-2 m-2 w-1/2"
+            className="p-2 m-2 w-full  sm:w-1/2"
             style={
               {
                 // border: "1px solid #ffffff",
@@ -95,7 +95,7 @@ function Home() {
                 ref={el}
               />
             </div>
-            <div className="text-white text-3xl mt-4 font-thin w-full">
+            <div className="text-white text-3xl mt-4 font-thin sm:w-full">
               <p
                 className="break-normal  text-900"
                 style={{ letterSpacing: "2px", fontWeight: 700 }}
