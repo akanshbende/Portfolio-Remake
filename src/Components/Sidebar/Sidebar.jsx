@@ -22,6 +22,7 @@ function Sidebar() {
 
   const handleItemClick = (index) => {
     setActiveIndex(index);
+    setToggle(!toggle);
   };
   // const innerWidth = document.window.innerWidth();
   // console.log(innerWidth);
