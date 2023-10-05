@@ -46,7 +46,7 @@ function CertificateCard({
             </li>
             <li className="issueDate text-red-600">{issueDate}</li>
             <li className="credentialLink">
-              <Link
+              <a
                 style={{
                   width: "fit-content",
                   fontSize: "1rem",
@@ -68,7 +68,7 @@ function CertificateCard({
               >
                 Show Credentials
                 <BsFillArrowUpRightCircleFill />
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
