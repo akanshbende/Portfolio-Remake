@@ -181,7 +181,7 @@ function Home() {
         className="text-xs"
       >
         <h1
-          className="text-white text-5xl "
+          className="text-white text-5xl text-bold my-4"
           // style={{ textShadow: "1px 5px #000000" }}
         >
           #Timeline

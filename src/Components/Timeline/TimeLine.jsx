@@ -21,152 +21,162 @@ import { GrAchievement } from "react-icons/gr";
 
 export default function CustomizedTimeline() {
   return (
-    <Timeline
-      position="alternate"
-      className="text-white  text-xs sm:text-base"
-      sx={{ fontFamily: "Poppins", marginTop: 5 }}
-    >
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          align="right"
-          variant="body2"
-          //   color="text.secondary"
-          className="text-white"
-        >
-          29 Nov 2001
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot sx={{ padding: "10px", margin: "5px" }}>
-            <FaBirthdayCake style={{ fontSize: "1.5rem", color: "#16171d" }} />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography
-            variant="h6"
-            component="span"
-            className="timeline-title text-xs sm:text-2xl roboto"
+    <div className=" flex-col-reverse">
+      <Timeline
+        position="alternate"
+        className="text-white  text-xs sm:text-base"
+        sx={{ fontFamily: "Poppins", marginTop: 5 }}
+      >
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            //   color="text.secondary"
+            className="text-white"
           >
-            <strong className="timeline-title text-xs sm:text-2xl">
-              @Day Zero
-            </strong>
-          </Typography>
-          {/* <Typography>Because you need strength</Typography> */}
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          variant="body2"
-          //   color="text.secondary"
-        >
-          ~ to 2018
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" sx={{ padding: "10px", margin: "5px" }}>
-            <FaSchool style={{ fontSize: "1.5rem" }} />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            <strong className="timeline-title text-xs sm:text-2xl ">
-              New Orange City Convent
-              <br />
-              Amravati, IN
-            </strong>
-          </Typography>
-          <Typography>Schooling till 10th</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          align="right"
-          variant="body2"
-          //   color="text.secondary"
-          className="text-white"
-        >
-          2018 to 2020
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot
-            color="primary"
-            variant="outlined"
-            sx={{ padding: "10px", margin: "5px" }}
+            Present
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector sx={{ bgcolor: "#ffffff", height: "10px" }} />
+            <TimelineDot
+              color="secondary"
+              sx={{ padding: "10px", marginTop: "5px" }}
+            >
+              <GrAchievement style={{ fontSize: "1.5rem", color: "#ffffff" }} />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              <strong className="timeline-title text-xs sm:text-2xl">
+                Next Big Thing
+              </strong>
+            </Typography>
+            {/* <Typography>B.Tech : Computer Science Engineering</Typography> */}
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            //   color="text.secondary"
+            className="text-white"
           >
-            <BiSolidSchool style={{ fontSize: "1.5rem" }} />
-          </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: "#ffffff" }} />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            <strong className="timeline-title text-xs sm:text-2xl">
-              Prerna Jr College <br /> <h6>Nagpur, IN</h6>
-            </strong>
-          </Typography>
-          <Typography>12th : Science Stream</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          align="right"
-          variant="body2"
-          //   color="text.secondary"
-          className="text-white"
-        >
-          2020 to 2024
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: "#ffffff" }} />
-          <TimelineDot color="primary" sx={{ padding: "10px", margin: "5px" }}>
-            <FaGraduationCap style={{ fontSize: "1.5rem" }} />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2, width: "100%" }}>
-          <Typography variant="h6" component="span">
-            <strong className="timeline-title text-xs sm:text-2xl ">
-              Government College of Engineering <br /> <h6>Aurangabad, IN</h6>
-            </strong>
-          </Typography>
-          <Typography>B.Tech : Computer Science Engineering</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          align="right"
-          variant="body2"
-          //   color="text.secondary"
-          className="text-white"
-        >
-          Present
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: "#ffffff", height: "10px" }} />
-          <TimelineDot
-            color="secondary"
-            sx={{ padding: "10px", marginTop: "5px" }}
+            2020 to 2024
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector sx={{ bgcolor: "#ffffff" }} />
+            <TimelineDot
+              color="primary"
+              sx={{ padding: "10px", margin: "5px" }}
+            >
+              <FaGraduationCap style={{ fontSize: "1.5rem" }} />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2, width: "100%" }}>
+            <Typography variant="h6" component="span">
+              <strong className="timeline-title text-xs sm:text-2xl ">
+                Government College of Engineering <br /> <h6>Aurangabad, IN</h6>
+              </strong>
+            </Typography>
+            <Typography>B.Tech : Computer Science Engineering</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            //   color="text.secondary"
+            className="text-white"
           >
-            <GrAchievement style={{ fontSize: "1.5rem", color: "#ffffff" }} />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            <strong className="timeline-title text-xs sm:text-2xl">
-              Next Big Thing
-            </strong>
-          </Typography>
-          {/* <Typography>B.Tech : Computer Science Engineering</Typography> */}
-        </TimelineContent>
-      </TimelineItem>
-    </Timeline>
+            2018 to 2020
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot
+              color="primary"
+              variant="outlined"
+              sx={{ padding: "10px", margin: "5px" }}
+            >
+              <BiSolidSchool style={{ fontSize: "1.5rem" }} />
+            </TimelineDot>
+            <TimelineConnector sx={{ bgcolor: "#ffffff" }} />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              <strong className="timeline-title text-xs sm:text-2xl">
+                Prerna Jr College <br /> <h6>Nagpur, IN</h6>
+              </strong>
+            </Typography>
+            <Typography>12th : Science Stream</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            variant="body2"
+            //   color="text.secondary"
+          >
+            ~ to 2018
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot
+              color="primary"
+              sx={{ padding: "10px", margin: "5px" }}
+            >
+              <FaSchool style={{ fontSize: "1.5rem" }} />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              <strong className="timeline-title text-xs sm:text-2xl ">
+                New Orange City Convent
+                <br />
+                Amravati, IN
+              </strong>
+            </Typography>
+            <Typography>Schooling till 10th</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            //   color="text.secondary"
+            className="text-white"
+          >
+            29 Nov 2001
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot sx={{ padding: "10px", margin: "5px" }}>
+              <FaBirthdayCake
+                style={{ fontSize: "1.5rem", color: "#16171d" }}
+              />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography
+              variant="h6"
+              component="span"
+              className="timeline-title text-xs sm:text-2xl roboto"
+            >
+              <strong className="timeline-title text-xs sm:text-2xl">
+                @Day Zero
+              </strong>
+            </Typography>
+            {/* <Typography>Because you need strength</Typography> */}
+          </TimelineContent>
+        </TimelineItem>
+      </Timeline>
+    </div>
   );
 }
