@@ -12,7 +12,10 @@ function Resume() {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
-    setOpen(true);
+    if (window.innerWidth > 500) {
+      setOpen(true);
+      console.log(hii);
+    }
   };
 
   const handleClose = () => {
@@ -79,6 +82,7 @@ function Resume() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
         className="hidden sm:block"
+        keepMounted
       >
         <Box sx={style}>
           <div className="flex align-middle justify-between text-white m-2 w-full px-2">

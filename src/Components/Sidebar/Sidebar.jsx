@@ -86,7 +86,7 @@ function Sidebar() {
 
               backgroundColor: "rgba(0,0,0,0.5)",
             }}
-            className="sidebar hidden sm:block "
+            className="sidebar hidden sm:block transition-all ease-in-out duration-500 "
             // sx={{
             //   width: "100%",
             // }}
