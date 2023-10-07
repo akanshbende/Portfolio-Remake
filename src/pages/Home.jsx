@@ -128,7 +128,7 @@ function Home() {
               >
                 <Link
                   to="/projects"
-                  className="flex  hover:bg-white hover:text-black"
+                  className="flex "
                   style={{ letterSpacing: "2px", fontWeight: 700 }}
                 >
                   Projects
