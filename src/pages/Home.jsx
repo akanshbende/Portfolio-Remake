@@ -108,9 +108,9 @@ function Home() {
                 portfolio!!
               </p>
             </div>
-            <div className="buttons mt-7">
+            <div className="buttons mt-7 ">
               <div
-                className="px-3"
+                className="px-3 "
                 style={{
                   width: "max-content",
                   fontSize: "1.2rem",
@@ -128,7 +128,7 @@ function Home() {
               >
                 <Link
                   to="/projects"
-                  className="flex"
+                  className="flex  hover:bg-white hover:text-black"
                   style={{ letterSpacing: "2px", fontWeight: 700 }}
                 >
                   Projects

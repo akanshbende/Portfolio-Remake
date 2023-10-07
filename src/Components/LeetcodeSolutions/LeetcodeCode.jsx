@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // leetcode api-1 :https://leetcode-api-faisalshohag.vercel.app/akansh29
 // leetcode api-2 :https://leetcode-stats-api.herokuapp.com/akansh29
 const explicitTheme = {
@@ -14,10 +14,35 @@ const minimalTheme = {
   light: ["hsl(0, 0%, 92%)", "rebeccapurple"],
   // for `dark` the default theme will be used
 };
+
 function LeetcodeCode() {
+  const apiUrl = "https://leetcode-api-faisalshohag.vercel.app/akansh29";
+
+  const [data, setData] = useState();
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(apiUrl);
+      if (response) {
+        const jsonData = await response.json();
+
+        setData(jsonData);
+      }
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+  console.log("data", data);
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <>
-      <div className="text-white">
+      {/* <div className="text-white">
         <GitHubCalendar
           blockSize={22}
           blockMargin={8}
@@ -54,7 +79,7 @@ function LeetcodeCode() {
             </Tooltip>
           )}
         />
-      </div>
+      </div> */}
     </>
   );
 }
