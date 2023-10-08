@@ -9,6 +9,9 @@ import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+//https://unsplash.com/s/photos/city-night
+// document.body.style.backgroundImage =
+//   "url('https://source.unsplash.com/1920x1080/?city-night" + " ')";
 function App() {
   const [count, setCount] = useState(0);
 

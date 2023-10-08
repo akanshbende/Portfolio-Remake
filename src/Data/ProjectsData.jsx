@@ -7,14 +7,14 @@ import { FaInstagram } from "react-icons/fa";
 const ProjectsData = [
   {
     title: "Shoply",
-    deploy: "shoply-app.netlify.app/",
+    deploy: "https://shoply-app.netlify.app/",
     img: "https://user-images.githubusercontent.com/76099756/270161887-19b207ae-d2fe-4691-a868-376a84e5ed69.png",
     repo: "https://github.com/akanshbende/Shoply",
     cName: "social-text",
   },
   {
     title: "FinTrack",
-    deploy: "fintrackkk.netlify.app/",
+    deploy: "https://fintrackkk.netlify.app/",
     img: "https://user-images.githubusercontent.com/76099756/270162438-f4f9d3e5-b1fe-4a30-a928-610d45950abe.png",
     repo: "https://github.com/akanshbende/FinTrack",
     cName: "social-text",

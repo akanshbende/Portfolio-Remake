@@ -11,7 +11,7 @@ function ProjectCard({ img, title, deploy, repo }) {
         className="wrapper "
         style={{
           width: "300px",
-          height: "15rem",
+          height: "15.5rem",
         }}
       >
         <div className="content flex-col">
@@ -25,17 +25,17 @@ function ProjectCard({ img, title, deploy, repo }) {
             />
           </div>
           <div className="project-title text-white m-2">
-            <h3>{title}</h3>
+            <h3 className="text-3xl">{title}</h3>
           </div>
-          <div className="project-links m-2 text-white flex ">
+          <div className="project-links m-2  text-white flex ">
             <a
               target="_blank"
-              className="deploy text-white text-2xl m-2"
+              className="deploy text-white text-3xl m-2"
               href={deploy}
             >
               <FaRocket className="ease-in-out duration-300  hover:rotate-12 hover:text-teal-200" />
             </a>
-            <a target="_blank" className="repo text-2xl m-2" href={repo}>
+            <a target="_blank" className="repo text-3xl m-2" href={repo}>
               <BsGithub className="ease-in-out duration-300  hover:rotate-12 hover:text-gray-400" />
             </a>
           </div>

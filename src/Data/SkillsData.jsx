@@ -30,18 +30,6 @@ const SkillData = [
     Proficiency: "Intermediate",
   },
   {
-    icon: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
-    name: "NodeJs",
-    type: "Runtime Environment",
-    Proficiency: "Beginner",
-  },
-  {
-    icon: "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
-    name: "ExpressJs",
-    type: "NodeJs Framework",
-    Proficiency: "Beginner",
-  },
-  {
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
     name: "React",
     type: "Javascript FrontEnd Framework",
@@ -52,6 +40,24 @@ const SkillData = [
     name: "Material UI",
     type: "UI Library",
     Proficiency: "Intermediate",
+  },
+  {
+    icon: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-dsc/events/Tailwind_CSS_Logo.svg_GkNDLAs.png",
+    name: "Tailwind",
+    type: "UI Library",
+    Proficiency: "Intermediate",
+  },
+  {
+    icon: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+    name: "NodeJs",
+    type: "Runtime Environment",
+    Proficiency: "Beginner",
+  },
+  {
+    icon: "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
+    name: "ExpressJs",
+    type: "NodeJs Framework",
+    Proficiency: "Beginner",
   },
   {
     icon: "https://cdn.iconscout.com/icon/free/png-256/free-mongodb-3521676-2945120.png",
@@ -77,6 +83,12 @@ const ToolsData = [
   {
     icon: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
     name: "Git",
+    type: "Version Control",
+    Proficiency: "Intermediate",
+  },
+  {
+    icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+    name: "Github",
     type: "Version Control",
     Proficiency: "Intermediate",
   },
