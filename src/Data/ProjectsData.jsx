@@ -35,7 +35,7 @@ const ProjectsData = [
   },
   {
     title: "Colorful-Notes",
-    deploy: "rainbow-notes.netlify.app",
+    deploy: "https://rainbow-notes.netlify.app",
     img: "https://user-images.githubusercontent.com/76099756/270162793-7e49feaf-3b39-411b-8510-e205fbe2e970.png",
     repo: "https://github.com/akanshbende/Colorful-Notes",
     cName: "social-text",
