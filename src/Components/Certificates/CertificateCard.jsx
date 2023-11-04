@@ -47,6 +47,9 @@ function CertificateCard({
             <li className="issueDate text-red-600">{issueDate}</li>
             <li className="credentialLink">
               <a
+                target="_blank"
+                rel="noreferrer"
+                className="link"
                 style={{
                   width: "fit-content",
                   fontSize: "1rem",

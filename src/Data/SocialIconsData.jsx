@@ -1,7 +1,7 @@
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
-import { SiLeetcode } from "react-icons/si";
+// import { SiLeetcode } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 // import { BsGithub } from "react-icons/bs";
 import "./SocialIcon.css";

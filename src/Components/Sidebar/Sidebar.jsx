@@ -65,7 +65,7 @@ function Sidebar() {
           // alignItems: "center",
           justifyContent: "center",
           backdropFilter: "blur(5px)",
-          zIndex: 1000000,
+          zIndex: 100,
         }}
         className="mb-16 sm:mb-0"
       >
@@ -74,7 +74,7 @@ function Sidebar() {
             direction={{ xs: "column", sm: "row" }}
             spacing={2}
             sx={{
-              zIndex: 50,
+              // zIndex: 50,
               width: "fit-content",
               fontSize: "1.5rem",
               margin: "20px",
