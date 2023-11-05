@@ -27,6 +27,13 @@ const ProjectsData = [
     cName: "social-text",
   },
   {
+    title: "Product-Filter",
+    deploy: "https://dev-town-task.vercel.app",
+    img: "https://user-images.githubusercontent.com/76099756/280528759-31082da0-6ab4-4247-a5d8-478249622a2b.png",
+    repo: "https://github.com/akanshbende/Product_Filter",
+    cName: "social-text",
+  },
+  {
     title: "WeatherForecast",
     deploy: "https://akanshbende.github.io/WeatherForecast/",
     img: "https://user-images.githubusercontent.com/76099756/211198795-c6d4be73-c38a-4fb1-9566-27e820a3e5e1.PNG",

@@ -3,7 +3,7 @@ import PageTitle from "../Components/PageTitle";
 import Heading from "../Components/Heading/Heading";
 
 import ResumePdf from "../Components/ResumePdf/ResumePdf.jsx";
-import { Button, Container } from "@mui/material";
+import { Button, Container, IconButton, Tooltip } from "@mui/material";
 import Button2 from "../Components/Buttons/Button2";
 import { BiSolidDownload } from "react-icons/bi";
 import DisableButton from "../Components/Buttons/DisableButton";
@@ -40,6 +40,9 @@ function Resume() {
         className="flex-col sm:flex-row"
       >
         <ResumePdf />
+
+        {/* <ResumePdf /> */}
+
         <div className="resume-cv sm:w-1/2 flex flex-col align-middle justify-center">
           <Button2
             title={"Download Resume"}
