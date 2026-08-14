@@ -26,9 +26,8 @@ function Home() {
     const typed = new Typed(el.current, {
       strings: [
         "Akansh Bende ^1000",
-        "a Student ^1000",
-        "a Full-Stack Developer ^1000",
-        "a Coder ^1000",
+        "a Software Engineer ^1000",
+        "a Backend Developer ^1000",
       ],
       typeSpeed: 50,
       backSpeed: 50,
@@ -73,18 +72,8 @@ function Home() {
         }}
         className="home-container"
       >
-        {/* <div className="anim-box1 absolute "></div>
-        <div className="anim-box2 absolute "></div> */}
-        <div className="block justify-between px-2 z-50  sm:flex">
-          <div
-            className="p-2 m-2 w-full  sm:w-1/2"
-            style={
-              {
-                // border: "1px solid #ffffff",
-              }
-            }
-          >
-            {/* <h1 className="text-white">home page content</h1> */}
+        <div className="justify-between px-2 z-10 md:flex sm:block sx:block">
+          <div className="p-2 m-2 md:w-3/4 sm:w-full sx:w-full">
             <div className="text-white text-5xl sm:text-6xl w-full text-bold">
               <h1>I'm</h1>
               <span
@@ -103,8 +92,8 @@ function Home() {
                 <span className="home-hello text-4xl text-bold text-lime-400">
                   HOLA!
                 </span>
-                , If you are looking for a web designer and developer, here is a
-                portfolio!!
+                , If you are looking for a Backend developer or a Software
+                Engineer, here is a portfolio!!
               </p>
             </div>
             <div className="buttons mt-7 ">
@@ -136,14 +125,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div
-            className="blur-load m-2 p-2"
-            style={
-              {
-                // border: "1px solid #ffffff",
-              }
-            }
-          >
+          <div className="blur-load m-2 p-2">
             <img
               src="/akansh.webp"
               width={350}

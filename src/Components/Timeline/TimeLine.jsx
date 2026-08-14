@@ -1,4 +1,3 @@
-import * as React from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -6,10 +5,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
+
 import Typography from "@mui/material/Typography";
 import "./timeline.css";
 
@@ -17,7 +13,7 @@ import { FaBirthdayCake } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa";
 import { BiSolidSchool } from "react-icons/bi";
 import { FaSchool } from "react-icons/fa6";
-import { GrAchievement } from "react-icons/gr";
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
 
 export default function CustomizedTimeline() {
   return (
@@ -40,22 +36,25 @@ export default function CustomizedTimeline() {
             //   color="text.secondary"
             className="text-white"
           >
-            Present
+            2024 to Present
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: "#ffffff", height: "10px" }} />
             <TimelineDot
-              color="secondary"
-              sx={{ padding: "10px", marginTop: "5px" }}
+              color="primary"
+              variant="outlined"
+              sx={{ padding: "10px", margin: "5px" }}
             >
-              <GrAchievement style={{ fontSize: "1.5rem", color: "#ffffff" }} />
+              <HiOutlineOfficeBuilding
+                style={{ fontSize: "1.5rem", color: "#ffffff" }}
+              />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
               <strong className="timeline-title text-sm sm:text-2xl">
-                Next Big Thing
+                Software Engineer @Yardi Software, Pune
               </strong>
             </Typography>
             {/* <Typography>B.Tech : Computer Science Engineering</Typography> */}
@@ -92,6 +91,7 @@ export default function CustomizedTimeline() {
               <span className="text-xs sm:text-base">
                 B.Tech : Computer Science and Engineering
               </span>
+              <span className="text-yellow-200"> (8.16 CGPA)</span>
             </Typography>
           </TimelineContent>
         </TimelineItem>
@@ -126,6 +126,7 @@ export default function CustomizedTimeline() {
               <span className="text-xs sm:text-base">
                 12th : Science Stream
               </span>
+              <span className="text-yellow-200"> (85.5%)</span>
             </Typography>
           </TimelineContent>
         </TimelineItem>
@@ -156,7 +157,8 @@ export default function CustomizedTimeline() {
               </strong>
             </Typography>
             <Typography sx={{ marginTop: 2 }}>
-              <span className="text-xs sm:text-base">Schooling till 10th</span>
+              <span className="text-xs sm:text-base">Schooling till 10th</span>{" "}
+              <span className="text-yellow-200">(89.9%)</span>
             </Typography>
           </TimelineContent>
         </TimelineItem>

@@ -51,12 +51,13 @@ function Resume() {
   //download button
   const handleDownload = () => {
     // Construct the URL to the PDF file you want to download
-    const pdfUrl = "../../../public/Akansh-Bende_Resume.pdf"; // Replace with the actual path to your PDF file
+    const pdfUrl =
+      "../../../public/Akansh_Bende_CV_NPCI_Senior_Associate_DBA.pdf"; // Replace with the actual path to your PDF file
 
     // Create a temporary <a> element to initiate the download
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Akansh-Bende_Resume.pdf"; // Specify the filename for the downloaded file
+    link.download = "Akansh_Bende_CV_NPCI_Senior_Associate_DBA.pdf"; // Specify the filename for the downloaded file
 
     // Trigger a click event on the <a> element to start the download
     link.click();

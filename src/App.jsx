@@ -13,8 +13,6 @@ import Contact from "./pages/Contact";
 // document.body.style.backgroundImage =
 //   "url('https://source.unsplash.com/1920x1080/?city-night" + " ')";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <BrowserRouter>

@@ -1,18 +1,20 @@
-import React from "react";
 import PageTitle from "../Components/PageTitle";
 import Heading from "../Components/Heading/Heading";
 
 import ResumePdf from "../Components/ResumePdf/ResumePdf.jsx";
-import { Button, Container, IconButton, Tooltip } from "@mui/material";
+import { Container } from "@mui/material";
 import Button2 from "../Components/Buttons/Button2";
 import { BiSolidDownload } from "react-icons/bi";
 import DisableButton from "../Components/Buttons/DisableButton";
 import CertificateCard from "../Components/Certificates/CertificateCard";
 import { CertificateData } from "../Data/CertificateData";
+
+import Resume_pdf from "../Components/ResumePdf/Akansh_Bende_CV_NPCI_Senior_Associate_DBA.pdf";
+
 function Resume() {
   const handlePrint = () => {
     // Construct the URL to the PDF file you want to open
-    const pdfUrl = "/Akansh-Bende_Resume.pdf"; // Replace with the actual path to your PDF file
+    const pdfUrl = Resume_pdf; // Replace with the actual path to your PDF file
 
     // Open the PDF in a new tab/window
     window.open(pdfUrl, "_blank");

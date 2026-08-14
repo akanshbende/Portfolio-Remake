@@ -11,7 +11,7 @@ function SocialLinks() {
           direction={{ xs: "row", sm: "column" }}
           spacing={2}
           sx={{
-            zIndex: 50,
+            zIndex: 20,
             width: "fit-content",
             position: "sticky",
             padding: "15px",
