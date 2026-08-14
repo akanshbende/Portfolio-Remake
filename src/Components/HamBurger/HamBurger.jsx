@@ -12,7 +12,6 @@ function HamBurger({ handleToggle }) {
           width: "50px",
           height: "50px",
           zIndex: 1000000,
-          width: "fit-content",
           padding: "15px",
           margin: "1rem",
           border: "2px solid",

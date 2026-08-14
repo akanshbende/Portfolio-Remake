@@ -40,8 +40,6 @@ function Contact() {
             border: "0px solid rgba(24, 24, 24, 0.5)",
             height: "cal(100vh-200px)",
             width: "100%",
-            marginTop: "1rem",
-
             backgroundColor: "rgba(24, 24, 24, 0.5)",
             backdropFilter: "blur(10px)",
             boxShadow: "0px 5px 10px #3a3f64",
