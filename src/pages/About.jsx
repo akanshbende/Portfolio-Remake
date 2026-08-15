@@ -105,7 +105,7 @@ function About() {
       >
         <GithubRepo />
       </Container>
-      <Heading title={"Days I Code"} />
+      <Heading title={"Days I LeetCode"} />
       <Container
         sx={{
           border: "2px solid rgba(24, 24, 24, 0.5)",
