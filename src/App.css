@@ -8,13 +8,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+#root {
+  min-height: 100%;
+  margin: 0;
+  background: #020617;
+}
 
 body {
-  background-image: url("../public/bg_main.jpg");
+  /* background-image: url("../public/bg_main.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: "Poppins";
+  
 }
 /* .about-wrapper {
 

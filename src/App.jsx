@@ -10,10 +10,12 @@ import Contact from "./pages/Contact";
 //https://unsplash.com/s/photos/city-night
 // document.body.style.backgroundImage =
 //   "url('https://source.unsplash.com/1920x1080/?city-night" + " ')";
+import Background from "./Components/Background/Background";
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Background />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

@@ -58,17 +58,18 @@ function Home() {
       <PageTitle title="Home" />
       <Container
         sx={{
-          border: "2px solid rgba(24, 24, 24, 0.5)",
+          border: "2px solid",
           height: "cal(100vh-200px)",
           borderRadius: "10px",
           marginTop: "1rem",
           padding: "1rem",
-          backgroundColor: "rgba(24, 24, 24, 0.5)",
-          backdropFilter: "blur(0px)",
+          backgroundColor: "rgba(24, 24, 24, 0.4)",
+          backdropFilter: "blur(3px)",
           boxShadow: "0px 5px 10px #3a3f64",
           position: "relative",
           fontWeight: 600,
           width: "93%",
+          borderColor: "rgba(255, 255, 255, 0.56)",
         }}
         className="home-container"
       >
@@ -148,13 +149,14 @@ function Home() {
       /> */}
       <Container
         sx={{
-          border: "2px solid rgba(24, 24, 24, 0.5)",
+          border: "2px solid",
           height: "cal(100vh-200px)",
           borderRadius: "10px",
           marginTop: "2rem",
           marginBottom: "2rem",
           // padding: "1rem",
-          backgroundColor: "rgba(24, 24, 24, 0.5)",
+          borderColor: "rgba(255, 255, 255, 0.56)",
+          backgroundColor: "rgba(24, 24, 24, 0.4)",
           backdropFilter: "blur(5px)",
           boxShadow: "0px 5px 10px #3a3f64",
           width: "95%",

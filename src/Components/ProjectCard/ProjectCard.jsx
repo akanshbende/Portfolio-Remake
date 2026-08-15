@@ -13,9 +13,11 @@ function ProjectCard({ img, title, deploy, repo }) {
           width: "300px",
           height: "15.5rem",
           borderRadius: "12px",
+          // border: "2px solid rgba(255, 255, 255, 0.56)",
+          backdropFilter: "blur(5px)",
         }}
       >
-        <div className="flex-col justify-between">
+        <div className="flex-col justify-between ">
           <div className="project-image flex items-center justify-center ">
             <img
               src={img ? img : "./public/Github-Symbol.png"}
@@ -23,6 +25,7 @@ function ProjectCard({ img, title, deploy, repo }) {
               className="project-img"
               loading="lazy"
               style={{
+                borderRadius: "12px 12px 0 0",
                 width:
                   img == "./public/TransactIQ_Logo.png" ||
                   img == "./public/NearX_logo.png"
