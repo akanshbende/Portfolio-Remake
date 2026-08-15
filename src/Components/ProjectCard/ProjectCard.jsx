@@ -20,7 +20,7 @@ function ProjectCard({ img, title, deploy, repo }) {
         <div className="flex-col justify-between ">
           <div className="project-image flex items-center justify-center ">
             <img
-              src={img ? img : "./public/Github-Symbol.png"}
+              src={img || "./public/Github-Symbol.png"}
               alt=""
               className="project-img"
               loading="lazy"
@@ -28,7 +28,7 @@ function ProjectCard({ img, title, deploy, repo }) {
                 borderRadius: "12px 12px 0 0",
                 width:
                   img == "./public/TransactIQ_Logo.png" ||
-                  img == "./public/NearX_logo.png"
+                  img == "./public/NearX_Logo.png"
                     ? "50%"
                     : "100%",
                 objectFit: "contain",

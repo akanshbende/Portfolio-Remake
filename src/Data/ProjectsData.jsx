@@ -15,7 +15,7 @@ const ProjectsData = [
   {
     title: "NearX",
     deploy: "",
-    img: "./public/NearX_logo.png",
+    img: "./public/NearX_Logo.png",
     repo: "https://github.com/akanshbende/NearX",
     cName: "social-text",
   },
@@ -36,7 +36,7 @@ const ProjectsData = [
   {
     title: "Portfolio",
     deploy: "https://portfolio-remake-sigma.vercel.app/",
-    img: "./public/Portfolio.png",
+    img: "https://private-user-images.githubusercontent.com/76099756/636502814-40a5f8e2-b9a6-448b-86fc-4d8cce0e96ac.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODY3ODQ4MzgsIm5iZiI6MTc4Njc4NDUzOCwicGF0aCI6Ii83NjA5OTc1Ni82MzY1MDI4MTQtNDBhNWY4ZTItYjlhNi00NDhiLTg2ZmMtNGQ4Y2NlMGU5NmFjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA4MTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwODE1VDA5MDIxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThhM2VmYWMzMzFhYTE3NjkyMWJkNmJjMDMyYjNkZWVkZjdkMzZjNjk0NTc5NzYxNGVkOTQ2MmQ1ODE1YmZlMzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.HcOLU7KVo7ulB3JpDlm9yJ0w63FWrjc1FB6eRjVdPuI",
     repo: "https://github.com/akanshbende/FinTrack",
     cName: "social-text",
   },
