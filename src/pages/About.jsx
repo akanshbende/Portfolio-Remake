@@ -3,6 +3,8 @@ import Heading from "../Components/Heading/Heading";
 import { Container } from "@mui/material";
 import GithubRepo from "../Components/GithubContributes/GithubRepo";
 
+import LeetCodeHeatMap from "../Components/LeetCodeHeatMap/LeetCodeHeatMap";
+
 function About() {
   return (
     <>
@@ -102,6 +104,22 @@ function About() {
         }}
       >
         <GithubRepo />
+      </Container>
+      <Heading title={"Days I Code"} />
+      <Container
+        sx={{
+          border: "2px solid rgba(24, 24, 24, 0.5)",
+          height: "cal(100vh-200px)",
+          borderRadius: "10px",
+          marginTop: "1rem",
+          padding: "1rem",
+          backgroundColor: "rgba(24, 24, 24, 0.5)",
+          backdropFilter: "blur(10px)",
+          boxShadow: "0px 5px 10px #3a3f64",
+          width: "90%",
+        }}
+      >
+        <LeetCodeHeatMap username="akansh29" />
       </Container>
       {/* <Heading title={"Days I Code"} />
       <Container

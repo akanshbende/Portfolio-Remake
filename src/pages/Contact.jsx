@@ -1,27 +1,46 @@
 import React, { useState } from "react";
 import PageTitle from "../Components/PageTitle";
 import Heading from "../Components/Heading/Heading";
-import { Container, Stack } from "@mui/material";
+import { Container } from "@mui/material";
+import { Forminit } from "forminit";
+
+const forminit = new Forminit();
+
+const FORM_ID = "ch2zdzh56w2";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [status, setStatus] = useState("idle");
+  const [error, setError] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setStatus("loading");
+    setError("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const { data, error } = await forminit.submit(FORM_ID, formData);
+
+    if (error) {
+      console.error(error);
+      setStatus("error");
+      setError(error.message || "Something went wrong. Please try again.");
+      return;
+    }
+
+    console.log("Submission successful:", data);
+
+    setStatus("success");
+    form.reset();
   };
 
   return (
     <>
       <PageTitle title="Contact" />
-      <Heading title={"Contact"} />
+      <Heading title="Contact" />
+
       <Container
         sx={{
           alignItems: "center",
@@ -31,103 +50,99 @@ function Contact() {
         }}
       >
         <div
-          className="contact-wrapper flex-col sm:flex-row  sm:h-full"
+          className="contact-wrapper flex-col sm:flex-row sm:h-full"
           style={{
             marginTop: "1rem",
             display: "flex",
             justifyContent: "space-between",
             zIndex: 30,
-            border: "0px solid rgba(24, 24, 24, 0.5)",
-            height: "cal(100vh-200px)",
+            height: "calc(100vh - 200px)",
             width: "100%",
             backgroundColor: "rgba(24, 24, 24, 0.5)",
             backdropFilter: "blur(10px)",
             boxShadow: "0px 5px 10px #3a3f64",
+            borderRadius: "12px",
+            overflow: "hidden",
           }}
         >
-          <div className="contact-img h-1/2 rounded-t-lg sm:w-1/2 sm:h-full  sm:rounded-l-xl  sm:my-0">
+          {/* Image */}
+          <div className="contact-img h-1/2 rounded-t-lg sm:w-1/2 sm:h-full sm:rounded-l-xl">
             <img
-              src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt=""
+              src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=2070&q=80"
+              alt="Contact"
               loading="lazy"
-              className="rounded-t-lg sm:rounded-l-xl"
+              className="w-full h-full object-cover rounded-t-lg sm:rounded-l-xl"
             />
           </div>
-          <div className="contact-form my-4 sm:my-4 w-1/2 flex align-middle justify-center  text-white">
-            <Stack
-              component="form"
-              sx={{
-                "& > :not(style)": { m: 1, width: "25ch" },
-                color: "white",
-              }}
-              autoComplete="off"
-            >
-              <form
-                action="https://getform.io/f/cb3ff207-76e1-4c0b-a150-ff72104a18b4"
-                method="POST"
-                style={{
-                  gap: "1rem",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <input
-                  id="outlined-basic"
-                  label="Name"
-                  variant="outlined"
-                  margin="normal"
-                  placeholder="Enter Your Name"
-                  type="text"
-                  name="name"
-                  required
-                />
-                <input
-                  id="outlined-basic"
-                  label="Email"
-                  variant="outlined"
-                  margin="normal"
-                  placeholder="Enter Your Email"
-                  type="email"
-                  required
-                />
-                <input
-                  id="outlined-basic"
-                  label="Message"
-                  variant="outlined"
-                  margin="normal"
-                  placeholder="Enter Your Message"
-                  style={{ height: "150px", textAlign: "initial" }}
-                  name="message"
-                  required
-                />
-                <button
-                  style={{
-                    width: "max-content",
-                    // height: "60px",
-                    // lineHeight: "1.2rem",
-                    fontSize: "1.2rem",
-                    display: "flex",
-                    padding: "5px 15px",
-                    border: "2px solid",
-                    borderColor: "#464d5b",
-                    borderRadius: "10px",
-                    color: "white",
-                    alignSelf: "center",
-                    gap: "5px",
-                    alignItems: "center",
 
-                    // boxShadow: "0px 8px 15px #3a3f64",
-                    // backdropFilter: "blur 5px",
-                    backgroundColor: "rgba(0,0,0,0.3)",
-                  }}
-                  className="contact-submit-button"
-                  type="submit"
-                  title={"Submit"}
-                >
-                  Submit
-                </button>
-              </form>
-            </Stack>
+          {/* Form */}
+          <div className="contact-form my-4 sm:my-4 w-full sm:w-1/2 flex items-center justify-center text-white">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-4 w-[80%]"
+            >
+              {/* Name */}
+              <input
+                type="text"
+                name="fi-sender-fullName"
+                placeholder="Enter Your Name"
+                required
+                className="p-3 rounded-lg bg-black/30 border border-gray-600 text-white outline-none"
+              />
+
+              {/* Email */}
+              <input
+                type="email"
+                name="fi-sender-email"
+                placeholder="Enter Your Email"
+                required
+                className="p-3 rounded-lg bg-black/30 border border-gray-600 text-white outline-none"
+              />
+
+              {/* Message */}
+              <textarea
+                name="fi-text-message"
+                placeholder="Enter Your Message"
+                required
+                rows="6"
+                className="p-3 rounded-lg bg-black/30 border border-gray-600 text-white outline-none resize-none"
+              />
+
+              {/* Submit */}
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                style={{
+                  width: "max-content",
+                  fontSize: "1.2rem",
+                  display: "flex",
+                  padding: "5px 15px",
+                  border: "2px solid #464d5b",
+                  borderRadius: "10px",
+                  color: "white",
+                  alignSelf: "center",
+                  gap: "5px",
+                  alignItems: "center",
+                  backgroundColor: "rgba(0,0,0,0.3)",
+                  cursor: status === "loading" ? "not-allowed" : "pointer",
+                }}
+                className="contact-submit-button"
+              >
+                {status === "loading" ? "Sending..." : "Submit"}
+              </button>
+
+              {/* Success */}
+              {status === "success" && (
+                <p className="text-green-400 text-center">
+                  Message sent successfully! I'll get back to you soon.
+                </p>
+              )}
+
+              {/* Error */}
+              {status === "error" && (
+                <p className="text-red-400 text-center">{error}</p>
+              )}
+            </form>
           </div>
         </div>
       </Container>

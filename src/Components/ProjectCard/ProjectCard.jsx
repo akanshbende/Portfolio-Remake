@@ -8,33 +8,46 @@ function ProjectCard({ img, title, deploy, repo }) {
   return (
     <>
       <div
-        className="wrapper "
+        className="wrapper flex align-middle justify-between items-center"
         style={{
           width: "300px",
           height: "15.5rem",
+          borderRadius: "12px",
         }}
       >
-        <div className="content flex-col">
-          <div className="project-image rounded-xl">
+        <div className="flex-col justify-between">
+          <div className="project-image flex items-center justify-center ">
             <img
-              src={img}
+              src={img ? img : "./public/Github-Symbol.png"}
               alt=""
-              className="project-img "
-              style={{ objectFit: "cover" }}
+              className="project-img"
               loading="lazy"
+              style={{
+                width:
+                  img == "./public/TransactIQ_Logo.png" ||
+                  img == "./public/NearX_logo.png"
+                    ? "50%"
+                    : "100%",
+                objectFit: "contain",
+                display: "block",
+              }}
             />
           </div>
           <div className="project-title text-white m-2">
             <h3 className="text-3xl">{title}</h3>
           </div>
           <div className="project-links m-2  text-white flex ">
-            <a
-              target="_blank"
-              className="deploy text-white text-3xl m-2"
-              href={deploy}
-            >
-              <FaRocket className="ease-in-out duration-300  hover:rotate-12 hover:text-teal-200" />
-            </a>
+            {deploy == "" ? (
+              <div></div>
+            ) : (
+              <a
+                target="_blank"
+                className="deploy text-white text-3xl m-2"
+                href={deploy ? deploy : ""}
+              >
+                <FaRocket className="ease-in-out duration-300  hover:rotate-12 hover:text-teal-200" />
+              </a>
+            )}
             <a target="_blank" className="repo text-3xl m-2" href={repo}>
               <BsGithub className="ease-in-out duration-300  hover:rotate-12 hover:text-gray-400" />
             </a>

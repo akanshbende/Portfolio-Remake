@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-    "engines": {
+  "engines": {
     "node": "24.x"
   },
   "scripts": {
@@ -20,7 +20,9 @@
     "@mui/material": "^5.13.6",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
+    "forminit": "^0.2.4",
     "framer-motion": "^10.16.4",
+    "ogl": "^1.0.11",
     "postcss": "^8.4.30",
     "postcss-cli": "^10.1.0",
     "postcss-nested": "^6.0.1",
@@ -31,6 +33,7 @@
     "react-github-calendar": "^4.0.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.11.0",
+    "react-leetcode": "^1.0.3",
     "react-loading-skeleton": "^3.3.1",
     "react-modal": "^3.16.1",
     "react-pdf": "^7.4.0",

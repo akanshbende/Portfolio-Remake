@@ -10,6 +10,9 @@ function Layout() {
   return (
     <>
       <div className="flex align-middle justify-center flex-col relative">
+        {/* <div style={{ width: "100%", height: "600px", position: "relative" }}>
+          <Galaxy />
+        </div> */}
         <Sidebar />
         <Outlet />
         <ScrollToTop />

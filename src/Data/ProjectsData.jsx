@@ -6,6 +6,20 @@ import { FaInstagram } from "react-icons/fa";
 
 const ProjectsData = [
   {
+    title: "TransactIQ",
+    deploy: "",
+    img: "./public/TransactIQ_Logo.png",
+    repo: "https://github.com/akanshbende/TransactIQ",
+    cName: "social-text",
+  },
+  {
+    title: "NearX",
+    deploy: "",
+    img: "./public/NearX_logo.png",
+    repo: "https://github.com/akanshbende/NearX",
+    cName: "social-text",
+  },
+  {
     title: "Shoply",
     deploy: "https://shoply-app.netlify.app/",
     img: "https://user-images.githubusercontent.com/76099756/270161887-19b207ae-d2fe-4691-a868-376a84e5ed69.png",
