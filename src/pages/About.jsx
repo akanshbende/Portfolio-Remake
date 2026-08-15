@@ -3,7 +3,7 @@ import Heading from "../Components/Heading/Heading";
 import { Container } from "@mui/material";
 import GithubRepo from "../Components/GithubContributes/GithubRepo";
 
-import LeetCodeHeatMap from "../Components/LeetCodeHeatMap/LeetCodeHeatMap";
+import LeetCodeHeatMap from "../Components/LeetcodeHeatmap/LeetCodeHeatMap.jsx";
 
 function About() {
   return (
