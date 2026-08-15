@@ -1,4 +1,5 @@
 # Portfolio-Remake
 My Portfolio Website
 
-![Screenshot 2023-09-28 115315](https://github.com/akanshbende/Portfolio-Remake/assets/76099756/8251a418-dca8-4378-9dc4-783eff94965a)
+<img width="1899" height="858" alt="Portfolio" src="https://github.com/user-attachments/assets/40a5f8e2-b9a6-448b-86fc-4d8cce0e96ac" />
+
