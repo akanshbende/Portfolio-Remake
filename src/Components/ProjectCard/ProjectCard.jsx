@@ -27,8 +27,7 @@ function ProjectCard({ img, title, deploy, repo }) {
               style={{
                 borderRadius: "12px 12px 0 0",
                 width:
-                  img == "./public/TransactIQ_Logo.png" ||
-                  img == "./public/NearX_Logo.png"
+                  img == "/TransactIQ_Logo.png" || img == "/NearX_Logo.png"
                     ? "50%"
                     : "100%",
                 objectFit: "contain",
