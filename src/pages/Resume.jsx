@@ -47,11 +47,11 @@ function Resume() {
 
         <div className="resume-cv sm:w-1/2 flex flex-col align-middle justify-center">
           <Button2
-            title={"Download Resume"}
+            title={"Download CV"}
             icon={<BiSolidDownload />}
             onclick={handlePrint}
           />
-          <DisableButton title={"Download CV"} icon={<BiSolidDownload />} />
+          {/* <DisableButton title={"Download CV"} icon={<BiSolidDownload />} /> */}
         </div>
       </Container>
 
