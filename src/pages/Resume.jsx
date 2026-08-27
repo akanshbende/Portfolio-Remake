@@ -9,12 +9,10 @@ import DisableButton from "../Components/Buttons/DisableButton";
 import CertificateCard from "../Components/Certificates/CertificateCard";
 import { CertificateData } from "../Data/CertificateData";
 
-import Resume_pdf from "../Components/ResumePdf/Akansh_Bende_CV_NPCI_Senior_Associate_DBA.pdf";
-
 function Resume() {
   const handlePrint = () => {
     // Construct the URL to the PDF file you want to open
-    const pdfUrl = Resume_pdf; // Replace with the actual path to your PDF file
+    const pdfUrl = "/Akansh_Bende_CV_2026.pdf"; // Replace with the actual path to your PDF file
 
     // Open the PDF in a new tab/window
     window.open(pdfUrl, "_blank");

@@ -8,13 +8,20 @@ import { AiOutlineClose } from "react-icons/ai";
 import resumeImage from "../../../public/ResumeAkansh.png"; // Replace with your resume image file path
 import Button1 from "../Buttons/Button1";
 import "./ResumeModel.css";
+import { Document, Page, pdfjs } from "react-pdf";
+import workerSrc from "pdfjs-dist/build/pdf.worker.min.js?url";
+
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+
 function Resume() {
   const [open, setOpen] = useState(false);
+  const [numPages, setNumPages] = useState(null);
+
+  const resumePdf = "/Akansh_Bende_CV_2026.pdf";
 
   const handleOpen = () => {
     if (window.innerWidth > 500) {
       setOpen(true);
-      console.log(hii);
     }
   };
 
@@ -51,13 +58,12 @@ function Resume() {
   //download button
   const handleDownload = () => {
     // Construct the URL to the PDF file you want to download
-    const pdfUrl =
-      "../../../public/Akansh_Bende_CV_NPCI_Senior_Associate_DBA.pdf"; // Replace with the actual path to your PDF file
+    const pdfUrl = "/Akansh_Bende_CV_2026.pdf"; // Replace with the actual path to your PDF file
 
     // Create a temporary <a> element to initiate the download
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Akansh_Bende_CV_NPCI_Senior_Associate_DBA.pdf"; // Specify the filename for the downloaded file
+    link.download = "Akansh_Bende_CV_2026.pdf"; // Specify the filename for the downloaded file
 
     // Trigger a click event on the <a> element to start the download
     link.click();
@@ -70,11 +76,26 @@ function Resume() {
         onClick={handleOpen}
         style={{ cursor: "pointer" }}
       >
-        <img
+        {/* <img
           src={resumeImage}
           alt="Resume"
           className="object-contain w-full sm:w-1/2"
-        />
+        /> */}
+
+        <Document
+          file={resumePdf}
+          onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+        >
+          {/* Renders every page of the PDF as a canvas element */}
+          {Array.from(new Array(numPages), (el, index) => (
+            <Page
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+              renderTextLayer={false}
+              renderAnnotationLayer={false}
+            />
+          ))}
+        </Document>
       </div>
       <div className="resume-download "></div>
       <Modal
@@ -112,7 +133,20 @@ function Resume() {
               className="flex align-middle justify-center"
               onClick={handleOpen}
             >
-              <img src={resumeImage} alt="Resume" className=" bg-center " />
+              <Document
+                file={resumePdf}
+                onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+              >
+                {/* Renders every page of the PDF as a canvas element */}
+                {Array.from(new Array(numPages), (el, index) => (
+                  <Page
+                    key={`page_${index + 1}`}
+                    pageNumber={index + 1}
+                    renderTextLayer={false}
+                    renderAnnotationLayer={false}
+                  />
+                ))}
+              </Document>
             </div>
 
             <Button1
